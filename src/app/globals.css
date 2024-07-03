@@ -4,10 +4,10 @@
 
 :root {
   --primaryLight: #fefdfa;
-  --primaryDark: #291309;
-  --primaryAccent: #5d4133;
+  --primaryDark: #1e213f;
+  --primaryAccent: #292d53;
   --headerHeightDesktop: 68px;
-  --headerHeightMobile: 78px;
+  --headerHeightMobile: 72px;
 }
 
 body {

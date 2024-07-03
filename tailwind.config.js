@@ -13,8 +13,7 @@ module.exports = {
         primaryAccent: "var(--primaryAccent)",
       },
       fontFamily: {
-        serif: ["var(--font-quilon)"],
-        sans: ["var(--font-rowan)"],
+        sans: ["var(--font-excon)"],
       },
     },
   },
