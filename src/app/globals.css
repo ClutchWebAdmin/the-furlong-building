@@ -3,16 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --primaryLight: #fefdfa;
+  --primaryWhite: #ebe6dd;
   --primaryDark: #1e213f;
-  --primaryAccent: #292d53;
-  --headerHeightDesktop: 68px;
-  --headerHeightMobile: 72px;
+  --primaryMid: #292d53;
+  --primaryLight: #797fb4;
+  --secondaryDark: #3f1e26;
+  --secondaryMid: #482a31;
+  --secondaryLight: #83696f;
 }
 
 body {
-  background-color: var(--primaryLight);
-  color: var(--primaryDark);
+  background-color: var(--primaryWhite);
+  color: var(--primaryMid);
   box-sizing: border-box;
 }
 

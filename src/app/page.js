@@ -30,6 +30,9 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
+      {/* <section id="section2" className="h-[500px] w-full px-5 pb-5">
+        <div className="w-full h-full border border-black rounded-3xl"></div>
+      </section> */}
     </main>
   );
 }

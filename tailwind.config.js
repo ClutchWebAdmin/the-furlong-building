@@ -8,9 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primaryWhite: "var(--primaryWhite)",
         primaryDark: "var(--primaryDark)",
+        primaryMid: "var(--primaryMid)",
         primaryLight: "var(--primaryLight)",
-        primaryAccent: "var(--primaryAccent)",
+        secondaryDark: "var(--secondaryDark)",
+        secondaryMid: "var(--secondaryMid)",
+        secondaryLight: "var(--secondaryLight)",
       },
       fontFamily: {
         sans: ["var(--font-excon)"],

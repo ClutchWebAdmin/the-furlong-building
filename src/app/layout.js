@@ -8,10 +8,10 @@ import TheFooter from "./components/TheFooter";
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${excon.variable}`}>
-      <body className="min-h-svh w-screen max-w-full flex flex-col mx-auto relative antialiased font-sans scroll-smooth">
+      <body className="min-h-svh max-w-full flex flex-col mx-auto relative antialiased scroll-smooth">
         <TheHeader />
         {children}
-        <TheFooter />
+        {/* <TheFooter /> */}
         <Analytics />
       </body>
     </html>
