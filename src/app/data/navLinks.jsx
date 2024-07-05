@@ -1,10 +1,10 @@
 export const navLinks = [
   {
-    text: "Link 1",
-    linkTo: "/",
+    text: "Details",
+    linkTo: "#details",
   },
   {
-    text: "Link 2",
-    linkTo: "/",
+    text: "Photos",
+    linkTo: "#photos",
   },
 ];

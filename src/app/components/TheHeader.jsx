@@ -1,25 +1,21 @@
-import Curve from "./Curve";
-import FurlongLogo from "./FurlongLogo";
-import MobileMenu from "./MobileMenu";
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
+import FurlongLogo from "./FurlongLogo";
 
 export default function TheHeader() {
   return (
-    <header className="absolute w-full">
-      <nav className="flex flex-row items-start w-full h-fit">
-        <Link
-          className="flex w-3/5 lg:w-1/4 bg-primaryWhite p-5 rounded-br-3xl relative"
-          href="/"
-        >
-          <div className="absolute top-5 -right-6">
-            <Curve variant={`top-left`} />
-          </div>
+    <header>
+      <nav className="grid grid-cols-2 lg:grid-cols-10 items-end gap-5 p-5 text-sm">
+        <Link href="/" className="lg:col-span-2">
           <FurlongLogo fill={`var(--primaryMid)`} />
-          <div className="absolute -bottom-6 left-5">
-            <Curve variant={`top-left`} />
-          </div>
         </Link>
-        <div className="w-2/5 lg:w-full">
+        <a href="#details" className="hidden lg:flex col-span-2 col-start-4">
+          XXX-XXX-XXXX
+        </a>
+        <a href="#photos" className="hidden lg:flex col-span-2">
+          xxxxxx@email.com
+        </a>
+        <div className="ml-auto lg:col-start-10">
           <MobileMenu />
         </div>
       </nav>

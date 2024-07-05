@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-excon)"],
+        mono: ["var(--font-spaceMono)"],
       },
     },
   },

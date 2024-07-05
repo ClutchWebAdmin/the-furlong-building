@@ -8,7 +8,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 
 import FurlongLogo from "./FurlongLogo";
 
-export default function Menu() {
+export default function MobileMenu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -33,30 +33,36 @@ export default function Menu() {
         id="open-menu"
         aria-label="open-mobile-menu"
         onClick={toggleMenu}
-        className={`text-primaryWhite hover:text-primaryMid transition-colors duration-200 ease-in-out text-5xl lg:z-[9997] top-10 right-10 fixed ${
-          isMenuOpen && "hidden"
-        }`}
+        className={`text-5xl lg:hidden lg:z-[9997] ${isMenuOpen && "hidden"}`}
       >
         <LuMenu />
       </button>
+      <button
+        id="open-menu"
+        aria-label="open-mobile-menu"
+        onClick={toggleMenu}
+        className={`hidden lg:flex lg:z-[9997] ${isMenuOpen && "hidden"}`}
+      >
+        <LuMenu className="text-6xl" />
+      </button>
 
       {isMenuOpen && (
-        <nav className="fixed flex flex-col justify-between h-full inset-0 bg-primaryDark text-primaryWhite z-[9000] animate__animated animate__slideInRight p-10">
+        <nav className="fixed flex flex-col justify-between h-full inset-0 bg-primaryDark text-primaryWhite z-[9000] animate__animated animate__slideInRight p-5">
           <div className="flex flex-row gap-2 justify-between">
-            <Link href={`/`} className="w-3/4 lg:w-1/2 text-xl">
+            <Link href={`/`} className="w-1/2 text-xl">
               <FurlongLogo fill={`var(--primaryWhite)`} />
             </Link>
             <button
               id="close-menu"
               aria-label="close-menu"
               onClick={toggleMenu}
-              className="z-[9998] text-5xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-10 right-10 fixed animate__animated animate__rotateIn"
+              className="z-[9998] text-5xl lg:text-6xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-5 right-5 fixed animate__animated animate__rotateIn"
             >
               <IoIosCloseCircle />
             </button>
           </div>
 
-          <div className="flex flex-col gap-10 lg:flex-row h-fit w-full justify-between text-5xl">
+          <div className="flex flex-col gap-10 lg:flex-row h-fit w-full justify-between text-5xl border-l border-b px-5 pb-5 border-primaryMid rounded-bl-3xl">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
@@ -73,15 +79,7 @@ export default function Menu() {
               className="w-fit hover:text-primaryLight"
               onClick={toggleMenu}
             >
-              Email Us
-            </a>
-            <a
-              href="tel:+11234567890"
-              target="_blank"
-              className="w-fit hover:text-primaryLight"
-              onClick={toggleMenu}
-            >
-              Call Us
+              Request Info
             </a>
           </div>
         </nav>
