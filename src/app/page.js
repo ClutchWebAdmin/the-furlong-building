@@ -34,15 +34,15 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main className="gap-20">
-      <section className="grid grid-cols-2 lg:grid-cols-10 lg:place-items-end gap-5 mx-5 border-l rounded-bl-3xl border-b pb-5 border-primaryLight">
+      <section className="grid grid-cols-2 lg:grid-cols-10 gap-5 mx-5 border-l rounded-bl-3xl border-b pb-5 border-primaryLight">
         <div className="col-span-full lg:col-span-3 flex flex-col gap-5 order-2 lg:order-1 pl-5">
-          {/* <Image
+          <Image
             src={front}
             alt="The Furlong Building"
             className="rounded-3xl col-span-full w-full h-full object-cover"
             placeholder="blur"
             priority
-          /> */}
+          />
           <div className=" w-full flex flex-col gap-2">
             <h5 className="uppercase text-sm xl:text-base text-red-900 font-medium -mb-1">
               For Sale
