@@ -47,7 +47,7 @@ export default function MobileMenu() {
       </button>
 
       {isMenuOpen && (
-        <nav className="fixed flex flex-col justify-between h-full inset-0 bg-primaryDark text-primaryWhite z-[9000] animate__animated animate__slideInRight p-5">
+        <nav className="fixed flex flex-col justify-between h-full inset-0 bg-primaryDark text-primaryWhite z-[9000] animate__animated animate__slideInRight p-5 lg:p-10">
           <div className="flex flex-row gap-2 justify-between">
             <Link href={`/`} className="w-1/2 text-xl">
               <FurlongLogo fill={`var(--primaryWhite)`} />
@@ -56,7 +56,7 @@ export default function MobileMenu() {
               id="close-menu"
               aria-label="close-menu"
               onClick={toggleMenu}
-              className="z-[9998] text-5xl lg:text-6xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-5 right-5 fixed animate__animated animate__rotateIn"
+              className="z-[9998] text-5xl lg:text-6xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-5 right-5 lg:top-10 lg:right-10 fixed animate__animated animate__rotateIn"
             >
               <IoIosCloseCircle />
             </button>

@@ -1,9 +1,6 @@
-import FurlongLogo from "./components/FurlongLogo";
 import Image from "next/image";
 import state from "../../public/images/217-state-st.png";
 import front from "../../public/images/140-front-st.png";
-import Link from "next/link";
-import MobileMenu from "./components/MobileMenu";
 
 export const metadata = {
   title: "The Furlong Building",
@@ -34,8 +31,8 @@ export const metadata = {
 export default function HomePage() {
   return (
     <main className="gap-20">
-      <section className="grid grid-cols-2 lg:grid-cols-10 gap-5 mx-5 border-l rounded-bl-3xl border-b pb-5 border-primaryLight">
-        <div className="col-span-full lg:col-span-3 flex flex-col gap-5 order-2 lg:order-1 pl-5">
+      <section className="grid grid-cols-2 lg:grid-cols-10 gap-5 mx-5 border-l rounded-bl-3xl border-b   pb-5 lg:pb-10 border-primaryLight">
+        <div className="col-span-full lg:col-span-3 flex flex-col gap-5 order-2 lg:order-1 pl-5 lg:pl-10">
           <Image
             src={front}
             alt="The Furlong Building"
@@ -66,7 +63,8 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 pl-5 pb-5">
+
+      <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 pl-5 lg:pl-10 pb-5 lg:pb-10">
         <h2 className="col-span-full text-4xl lg:text-5xl">Property Details</h2>
 
         <div className="grid lg:grid-cols-2 gap-x-10 gap-y-2 col-span-full">
