@@ -62,7 +62,7 @@ export default function MobileMenu() {
             </button>
           </div>
 
-          <div className="flex flex-col gap-10 lg:flex-row h-fit w-full justify-between text-5xl border-l border-b px-5 pb-5 border-primaryMid rounded-bl-3xl">
+          <div className="flex flex-col gap-10 lg:flex-row h-fit w-full justify-between text-5xl border-l border-b px-5 pb-5 border-primaryLight rounded-bl-3xl">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
