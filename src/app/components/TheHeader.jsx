@@ -13,6 +13,7 @@ export default function TheHeader() {
               src={logo}
               alt="The Furlong Building"
               className="w-full h-auto"
+              priority
             />
           </Link>
           <MobileMenu />
