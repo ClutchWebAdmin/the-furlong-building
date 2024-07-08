@@ -1,17 +1,17 @@
 import Image from "next/image";
 import state from "../../public/images/217-state-st.png";
 import front from "../../public/images/140-front-st.png";
-import Link from "next/link";
-import logo from "../../public/logos/furlong-logo.png";
-import MobileMenu from "./components/MobileMenu";
 
 export const metadata = {
   title: "The Furlong Building",
-  description: "",
-  keywords: "",
+  description:
+    "Step into the heart of Salem's bustling downtown with the opportunity to lease, purchase, or embark on a joint venture at the Historic Furlong Building.",
+  keywords:
+    "Commercial real estate salem oregon, retail spaces downtown salem oregon, commercial space for sale",
   openGraph: {
     title: "The Furlong Building",
-    description: "",
+    description:
+      "Step into the heart of Salem's bustling downtown with the opportunity to lease, purchase, or embark on a joint venture at the Historic Furlong Building.",
     siteName: "The Furlong Building",
     type: "website",
     locale: "en_US",
