@@ -1,6 +1,19 @@
 import Image from "next/image";
 import state from "../../public/images/217-state-st.png";
 import front from "../../public/images/140-front-st.png";
+import photo1 from "../../public/images/1.png";
+import photo2 from "../../public/images/2.png";
+import photo3 from "../../public/images/3.png";
+import photo4 from "../../public/images/4.png";
+import photo5 from "../../public/images/5.png";
+import photo6 from "../../public/images/6.png";
+import photo7 from "../../public/images/7.png";
+import photo8 from "../../public/images/8.png";
+import photo9 from "../../public/images/9.png";
+import photo10 from "../../public/images/10.png";
+import photo11 from "../../public/images/11.png";
+import photo12 from "../../public/images/12.png";
+import Carousel from "./components/Carousel";
 
 export const metadata = {
   title: "The Furlong Building",
@@ -30,6 +43,21 @@ export const metadata = {
     },
   ],
 };
+
+const photos = [
+  photo1,
+  photo2,
+  photo3,
+  photo4,
+  photo5,
+  photo6,
+  photo7,
+  photo8,
+  photo9,
+  photo10,
+  photo11,
+  photo12,
+];
 
 export default function HomePage() {
   return (
@@ -149,7 +177,7 @@ export default function HomePage() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1034.0756271093355!2d-123.041991286519!3d44.9410963465145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54bfff72dc350ceb%3A0x9a27731d2444ba49!2s217%20State%20St%2C%20Salem%2C%20OR%2097301!5e0!3m2!1sen!2sus!4v1720221687393!5m2!1sen!2sus"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="w-full aspect-square lg:h-full lg:aspect-auto rounded-3xl"
           ></iframe>
         </div>
@@ -192,6 +220,17 @@ export default function HomePage() {
             </h6>
             <p className="text-xl">$2,495,000</p>
           </div>
+        </div>
+      </section>
+
+      <div
+        id="photos"
+        className="h-[var(--mobileHeaderHeight)] lg:h-[164px]"
+      ></div>
+      <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 p-5 pr-0 lg:p-10">
+        <h2 className="col-span-full text-4xl lg:text-5xl">Photos</h2>
+        <div className="col-span-full rounded-3xl">
+          <Carousel photos={photos} />
         </div>
       </section>
     </main>
