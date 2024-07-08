@@ -1,6 +1,9 @@
 import Image from "next/image";
 import state from "../../public/images/217-state-st.png";
 import front from "../../public/images/140-front-st.png";
+import Link from "next/link";
+import logo from "../../public/logos/furlong-logo.png";
+import MobileMenu from "./components/MobileMenu";
 
 export const metadata = {
   title: "The Furlong Building",
@@ -30,41 +33,44 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main className="gap-20">
-      <section className="grid grid-cols-2 lg:grid-cols-10 gap-5 mx-5 border-l rounded-bl-3xl border-b   pb-5 lg:pb-10 border-primaryLight">
-        <div className="col-span-full lg:col-span-3 flex flex-col gap-5 order-2 lg:order-1 pl-5 lg:pl-10">
-          <Image
-            src={front}
-            alt="The Furlong Building"
-            className="rounded-3xl col-span-full w-full h-full object-cover"
-            placeholder="blur"
-            priority
-          />
-          <div className=" w-full flex flex-col gap-2">
-            <h5 className="uppercase text-sm xl:text-base text-red-900 font-medium -mb-1">
-              For Sale
-            </h5>
-            <p className="text-xl xl:text-2xl">
-              217 State St & 140 Front St
-              <br />
-              Salem, Oregon, 97301
-            </p>
-            <h3 className="text-5xl font-medium ">$2,495,000</h3>
+    <main>
+      <section id="hero" className="flex h-svh px-5 pb-5">
+        <div className="flex flex-col lg:grid lg:grid-cols-10 gap-5 lg:gap-10 h-full w-full border-l border-b border-primaryLight rounded-bl-3xl pt-[var(--mobileHeaderHeight)] lg:pt-[var(--desktopHeaderHeight)]">
+          <div className="flex w-full h-full lg:col-span-6 pl-5 lg:pl-10 lg:pb-10">
+            <Image
+              src={state}
+              alt="The Furlong Building"
+              className="w-full h-full object-cover rounded-3xl"
+            />
           </div>
-        </div>
 
-        <div className="col-span-full lg:col-start-4 lg:col-span-7 order-1 lg:order-2 pl-5 lg:pl-0">
-          <Image
-            src={state}
-            alt="The Furlong Building"
-            className="w-full h-full object-cover rounded-3xl"
-            placeholder="blur"
-            priority
-          />
+          <div className="flex flex-col lg:col-span-4 gap-5 lg:gap-10 w-full h-1/2 lg:h-full px-5 lg:pl-0 lg:pr-10 pb-5 lg:pb-10">
+            <Image
+              src={front}
+              alt="The Furlong Building"
+              className="hidden lg:flex h-full w-full object-cover rounded-3xl"
+            />
+            <div className="flex flex-col w-full h-fit gap-2">
+              <h5 className="uppercase text-red-900 font-medium -mb-1">
+                For Sale
+              </h5>
+              <p className="text-2xl">
+                217 State St & 140 Front St
+                <br />
+                Salem, Oregon, 97301
+              </p>
+              <h3 className="text-5xl font-medium ">$2,495,000</h3>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 pl-5 lg:pl-10 pb-5 lg:pb-10">
+      <div
+        id="details"
+        className="h-[var(--mobileHeaderHeight)] lg:h-[164px]"
+      ></div>
+
+      <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 p-5 pr-0 lg:p-10">
         <h2 className="col-span-full text-4xl lg:text-5xl">Property Details</h2>
 
         <div className="grid lg:grid-cols-2 gap-x-10 gap-y-2 col-span-full">
@@ -117,7 +123,7 @@ export default function HomePage() {
           <p className="text-xl">Salem</p>
         </div>
 
-        <div className="flex flex-col gap-2  lg:col-span-2">
+        <div className="flex flex-col gap-2 lg:col-span-2">
           <h6 className="font-mono uppercase text-sm text-primaryLight">
             State
           </h6>

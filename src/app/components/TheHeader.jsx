@@ -1,28 +1,20 @@
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
-import FurlongLogo from "./FurlongLogo";
+import logo from "../../../public/logos/furlong-logo.png";
+import Image from "next/image";
 
 export default function TheHeader() {
   return (
     <header>
-      <nav className="grid grid-cols-2 lg:grid-cols-10 items-end gap-5 p-5">
-        <Link href="/" className="lg:col-span-2">
-          <FurlongLogo fill={`var(--primaryMid)`} />
-        </Link>
-        <div className="hidden lg:flex flex-col gap-2 lg:col-start-4 col-span-2 uppercase">
-          <p className="font-mono text-primaryLight text-sm">Phone</p>
-          <a href="#details" className="col-span-2 col-start-4 text-xl">
-            123-456-7890
-          </a>
-        </div>
-        <div className="hidden lg:flex flex-col gap-2 col-span-2 uppercase">
-          <p className="font-mono text-primaryLight text-sm">Email</p>
-          <a href="tel:+11234567890" className="col-span-2 col-start-4 text-xl">
-            placeholder@email.com
-          </a>
-        </div>
-
-        <div className="ml-auto lg:col-start-10">
+      <nav className="fixed flex w-full bg-primaryWhite px-5 pt-5">
+        <div className="flex flex-row w-full justify-between items-start border-t border-l border-primaryLight rounded-tl-3xl pl-5 pt-5 lg:px-10 lg:pt-10">
+          <Link href="/" className="w-[200px] lg:w-[250px] pb-5">
+            <Image
+              src={logo}
+              alt="The Furlong Building"
+              className="w-full h-auto"
+            />
+          </Link>
           <MobileMenu />
         </div>
       </nav>
