@@ -41,6 +41,8 @@ export default function HomePage() {
               src={state}
               alt="The Furlong Building"
               className="w-full h-full object-cover rounded-3xl"
+              priority
+              placeholder="blur"
             />
           </div>
 
@@ -49,6 +51,8 @@ export default function HomePage() {
               src={front}
               alt="The Furlong Building"
               className="hidden lg:flex h-full w-full object-cover rounded-3xl"
+              priority
+              placeholder="blur"
             />
             <div className="flex flex-col w-full h-fit gap-2">
               <h5 className="uppercase text-red-900 font-medium -mb-1">
