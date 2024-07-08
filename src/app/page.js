@@ -61,7 +61,7 @@ export default function HomePage() {
               <p className="text-2xl">
                 217 State St & 140 Front St
                 <br />
-                Salem, Oregon, 97301
+                Salem, Oregon 97301
               </p>
               <h3 className="text-5xl font-medium ">$2,495,000</h3>
             </div>
