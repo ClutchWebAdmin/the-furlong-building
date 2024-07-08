@@ -47,7 +47,7 @@ export default function MobileMenu() {
               id="close-menu"
               aria-label="close-menu"
               onClick={toggleMenu}
-              className="z-[9998] text-5xl lg:text-7xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-10 right-10 lg:top-14 lg:right-14 fixed animate__animated animate__rotateIn"
+              className="z-[9998] text-5xl lg:text-7xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-10 right-5 lg:top-14 lg:right-14 fixed animate__animated animate__rotateIn"
             >
               <IoIosCloseCircle />
             </button>
