@@ -12,6 +12,7 @@ export default function Carousel({ photos }) {
         perPage: 1,
         pagination: true,
         arrows: true,
+        autoplay: true,
       }}
       className="rounded-3xl overflow-hidden"
     >
@@ -21,7 +22,7 @@ export default function Carousel({ photos }) {
             <Image
               src={photo}
               alt={`Photo ${index + 1}`}
-              className="w-full h-auto object-cover rounded-3xl aspect-square"
+              className="w-full h-auto object-cover rounded-3xl aspect-square lg:aspect-auto"
               placeholder="blur"
             />
           </div>

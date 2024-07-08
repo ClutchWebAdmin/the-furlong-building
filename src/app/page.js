@@ -229,7 +229,7 @@ export default function HomePage() {
       ></div>
       <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 p-5 pr-0 lg:p-10">
         <h2 className="col-span-full text-4xl lg:text-5xl">Photos</h2>
-        <div className="col-span-full -z-10 rounded-3xl">
+        <div className="col-span-full rounded-3xl">
           <Carousel photos={photos} />
         </div>
       </section>
