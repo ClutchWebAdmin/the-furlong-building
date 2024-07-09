@@ -9,8 +9,6 @@ export default function Carousel({ photos }) {
     <Splide
       options={{
         type: "loop",
-        perPage: 1,
-        pagination: true,
         arrows: true,
         autoplay: true,
       }}

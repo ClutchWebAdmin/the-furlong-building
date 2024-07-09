@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function TheHeader() {
   return (
     <header>
-      <nav className="fixed flex w-full bg-primaryWhite px-5 pt-5">
+      <nav className="absolute top-0 flex w-full bg-primaryWhite px-5 pt-5">
         <div className="flex flex-row w-full justify-between border-t border-l border-primaryLight rounded-tl-3xl pl-5 pt-5 lg:px-10 lg:pt-10 pb-5">
           <Link href="/" className="w-[200px] lg:w-[250px]">
             <Image

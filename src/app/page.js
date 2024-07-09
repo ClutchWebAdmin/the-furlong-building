@@ -79,8 +79,19 @@ export default function HomePage() {
               placeholder="blur"
             />
           </div>
+          <div className="flex lg:hidden flex-col w-full h-fit gap-2 pl-5 pb-5">
+            <h5 className="uppercase text-red-900 font-medium -mb-1">
+              For Sale
+            </h5>
+            <p className="text-2xl">
+              217 State St & 140 Front St
+              <br />
+              Salem, Oregon 97301
+            </p>
+            <h3 className="text-5xl font-medium ">$2,495,000</h3>
+          </div>
 
-          <div className="flex flex-col lg:col-span-4 gap-5 lg:gap-10 w-full h-1/2 lg:h-full px-5 lg:pl-0 lg:pr-10 pb-5 lg:pb-10">
+          <div className="hidden lg:flex flex-col lg:col-span-4 gap-5 lg:gap-10 w-full h-1/2 lg:h-full px-5 lg:pl-0 lg:pr-10 pb-5 lg:pb-10">
             <Image
               src={front}
               alt="The Furlong Building"
