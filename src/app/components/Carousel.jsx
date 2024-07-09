@@ -14,7 +14,7 @@ export default function Carousel({ photos }) {
         arrows: true,
         autoplay: true,
       }}
-      className="rounded-3xl overflow-hidden h-[95svh]"
+      className="rounded-3xl overflow-hidden lg:h-[95svh]"
     >
       {photos.map((photo, index) => (
         <SplideSlide key={index} className="overflow-hidden">
