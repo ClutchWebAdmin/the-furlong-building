@@ -16,7 +16,16 @@ export default function TheHeader() {
               priority
             />
           </Link>
-          <MobileMenu />
+          <div className="flex flex-row gap-10">
+            <a
+              href="mailto:info@traditionrep.com?subject=Requesting%more%info%for%The%Furlong%Building"
+              target="_blank"
+              className="mt-3 bg-primaryMid text-primaryWhite hover:bg-primaryLight transition-colors duration-200 ease-in-out w-fit h-fit px-4 py-2 rounded-3xl"
+            >
+              Request Info
+            </a>
+            <MobileMenu />
+          </div>
         </div>
       </nav>
     </header>

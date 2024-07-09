@@ -65,12 +65,20 @@ export default function MobileMenu() {
               </Link>
             ))}
             <a
-              href="mailto:email@email.com"
+              href="tel:+15038774653"
               target="_blank"
               className="w-fit hover:text-primaryLight"
               onClick={toggleMenu}
             >
-              Request Info
+              Call
+            </a>
+            <a
+              href="mailto:info@traditionrep.com?subject=Requesting%more%info%for%The%Furlong%Building"
+              target="_blank"
+              className="w-fit hover:text-primaryLight"
+              onClick={toggleMenu}
+            >
+              Email
             </a>
           </div>
         </nav>
