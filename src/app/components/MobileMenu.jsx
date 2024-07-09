@@ -32,14 +32,14 @@ export default function MobileMenu() {
         id="open-menu"
         aria-label="open-mobile-menu"
         onClick={toggleMenu}
-        className={`flex lg:z-[9997] ${isMenuOpen && "hidden"}`}
+        className={`flex lg:z-[9997] ${isMenuOpen && "invisible"}`}
       >
         <LuMenu className="text-5xl lg:text-7xl" />
       </button>
 
       {isMenuOpen && (
-        <nav className="fixed flex flex-col justify-between h-full inset-0 bg-primaryDark text-primaryWhite z-[9000] animate__animated animate__slideInRight p-5">
-          <div className="flex flex-row gap-2 justify-between border-t border-l border-primaryLight rounded-tl-3xl p-5 lg:p-10">
+        <nav className="fixed flex flex-col justify-between items-center h-full inset-0 bg-primaryDark text-primaryWhite z-[9000] animate__animated animate__slideInRight p-5">
+          <div className="flex flex-row gap-2 w-full justify-between items-center lg:items-start border-t border-l border-primaryLight rounded-tl-3xl pt-5 pl-5 pb-5 lg:p-10">
             <Link href={`/`} className="w-[200px] lg:w-1/2 text-xl">
               <FurlongLogo fill={`var(--primaryWhite)`} />
             </Link>
@@ -47,7 +47,7 @@ export default function MobileMenu() {
               id="close-menu"
               aria-label="close-menu"
               onClick={toggleMenu}
-              className="z-[9998] text-5xl lg:text-7xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out top-10 right-5 lg:top-14 lg:right-14 fixed animate__animated animate__rotateIn"
+              className="z-[9998] text-5xl lg:text-7xl text-primaryWhite hover:text-primaryLight transition-colors duration-200 ease-in-out animate__animated animate__rotateIn"
             >
               <IoIosCloseCircle />
             </button>
