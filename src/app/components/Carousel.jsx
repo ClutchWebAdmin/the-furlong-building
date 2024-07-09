@@ -8,13 +8,13 @@ export default function Carousel({ photos }) {
   return (
     <Splide
       options={{
-        type: "slide",
+        type: "loop",
         perPage: 1,
         pagination: true,
         arrows: true,
         autoplay: true,
       }}
-      className="rounded-3xl overflow-hidden"
+      className="rounded-3xl overflow-hidden h-[95svh]"
     >
       {photos.map((photo, index) => (
         <SplideSlide key={index} className="overflow-hidden">

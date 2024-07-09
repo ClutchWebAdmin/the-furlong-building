@@ -13,6 +13,9 @@ import photo9 from "../../public/images/9.png";
 import photo10 from "../../public/images/10.png";
 import photo11 from "../../public/images/11.png";
 import photo12 from "../../public/images/12.png";
+import photo13 from "../../public/images/13.png";
+import photo14 from "../../public/images/14.png";
+import photo15 from "../../public/images/15.png";
 import Carousel from "./components/Carousel";
 
 export const metadata = {
@@ -57,6 +60,9 @@ const photos = [
   photo10,
   photo11,
   photo12,
+  photo13,
+  photo14,
+  photo15,
 ];
 
 export default function HomePage() {
