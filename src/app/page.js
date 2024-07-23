@@ -81,14 +81,14 @@ export default function HomePage() {
           </div>
           <div className="flex lg:hidden flex-col w-full h-fit gap-2 pl-5 pb-5">
             <h5 className="uppercase text-red-900 font-medium -mb-1">
-              For Sale
+              Newly Listed
             </h5>
             <p className="text-2xl">
               217 State St & 140 Front St
               <br />
               Salem, Oregon 97301
             </p>
-            <h3 className="text-5xl font-medium ">$2,495,000</h3>
+            <h3 className="text-6xl font-medium ">$2,495,000</h3>
           </div>
 
           <div className="hidden lg:flex flex-col lg:col-span-4 gap-5 lg:gap-10 w-full h-1/2 lg:h-full px-5 lg:pl-0 lg:pr-10 pb-5 lg:pb-10">
@@ -101,25 +101,27 @@ export default function HomePage() {
             />
             <div className="flex flex-col w-full h-fit gap-2">
               <h5 className="uppercase text-red-900 font-medium -mb-1">
-                For Sale
+                Newly Listed
               </h5>
               <p className="text-2xl">
                 217 State St & 140 Front St
                 <br />
                 Salem, Oregon 97301
               </p>
-              <h3 className="text-5xl font-medium ">$2,495,000</h3>
+              <h3 className="lg:text-6xl xl:text-7xl font-medium ">
+                $2,495,000
+              </h3>
             </div>
           </div>
         </div>
       </section>
 
-      <div
-        id="details"
-        className="h-[var(--mobileHeaderHeight)] lg:h-[164px]"
-      ></div>
+      <div className="h-[var(--mobileHeaderHeight)] lg:h-[164px]"></div>
 
-      <section className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 p-5 pr-0 lg:p-10">
+      <section
+        id="details"
+        className="rounded-bl-3xl border-l border-b border-primaryLight mx-5 grid grid-cols-2 lg:grid-cols-10 gap-10 p-5 pr-0 lg:p-10"
+      >
         <h2 className="col-span-full text-4xl lg:text-5xl">Property Details</h2>
 
         <div className="grid lg:grid-cols-2 gap-x-10 gap-y-2 col-span-full">
